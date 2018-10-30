@@ -6,7 +6,7 @@ var lapse = 1;
 let whaleImg;
 
 function preload(){
-    whaleImg = loadImage("test.jpg");
+    whaleImg = loadImage("whale.jpg");
 }
 
 function setup() {
@@ -14,8 +14,6 @@ function setup() {
   background(220);
   whale = new Whale();
   ship = new Ship();
-
-  image(whaleImg, 0, 0, img.width/3, img.height/3);
 }
 
 function draw() {
@@ -73,7 +71,7 @@ function Whale() {
     this.x = mouseX;
   	this.y = mouseY;
     fill(0);
-    ellipse(this.x, this.y, this.diameter, this.diameter);
+    //ellipse(this.x, this.y, this.diameter, this.diameter);
     image(whaleImg, this.x, this.y, img.width/3, img.height/3);
 
   }
