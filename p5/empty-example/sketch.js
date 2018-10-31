@@ -5,9 +5,9 @@ var lapse = 1;
 
 let whaleImg;
 
-function preload(){
-    whaleImg = loadImage("whale.jpg");
-}
+// function preload(){
+//     whaleImg = loadImage("whale.jpg");
+// }
 
 function setup() {
   createCanvas(800, 600);
